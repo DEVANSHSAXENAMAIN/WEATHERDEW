@@ -107,16 +107,16 @@ function getWeather() {
                 <h4 class="desc">${weatherDesc}</h4>
                 <img src="${iconUrl}" alt="${weatherMain}"/>
                 <h1>${temp}&#176;C</h1>
-                <div class="temp_container">
-                    <div>
-                        <h4 class="title">min</h4>
-                        <h4 class="temp">${temp_min}&#176;C</h4>
-                    </div>
-                    <div>
-                        <h4 class="title">max</h4>
-                        <h4 class="temp">${temp_max}&#176;C</h4>
-                    </div>
-                </div>
+               <div class="temp_container">
+    <div>
+        <h4 class="title">humidity</h4>
+        <h4 class="temp">${data.main.humidity}%</h4>
+    </div>
+    <div>
+        <h4 class="title">wind</h4>
+        <h4 class="temp">${data.wind.speed} m/s</h4>
+    </div>
+</div>
             `;
             setWeatherAnim();
             // Play weather sound if enabled
